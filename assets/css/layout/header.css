@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  padding: 2rem 0;
+  width: 80%;
+  max-width: 90rem;
+}
+.header__controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__btn {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+@media (min-width: 28em) {
+  .header__btn {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+@media (min-width: 56em) {
+  .header__btn {
+    width: 4rem;
+    height: 4rem;
+  }
+}

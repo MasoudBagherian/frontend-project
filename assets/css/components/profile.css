@@ -1,0 +1,142 @@
+.profile {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 60rem;
+  margin-bottom: 4rem;
+}
+
+.profile__summary {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.profile__avatar {
+  width: 10rem;
+  height: 10rem;
+  padding: 4px;
+  border-radius: 50%;
+  background: linear-gradient(
+    50deg,
+    var(--color-gradient-1),
+    var(--color-gradient-2),
+    var(--color-gradient-3),
+    var(--color-gradient-4)
+  );
+  margin-right: 8px;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile__avatar::before {
+  content: ' ';
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 1;
+}
+@media (min-width: 28em) {
+  .profile__avatar {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+@media (min-width: 56em) {
+  .profile__avatar {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+.profile__avatar img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+.profile__avatar .default {
+  border-radius: 0;
+  width: 60%;
+  height: 60%;
+}
+.profile__info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.profile__statistics {
+  margin: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.profile__statistics .heading {
+  font-size: 1.6rem;
+}
+@media (min-width: 56em) {
+  .profile__statistics .heading {
+    font-size: 1.8rem;
+  }
+}
+.profile__statistics .key {
+  color: var(--text-color-secondary);
+  font-size: 1.4rem;
+}
+@media (min-width: 56em) {
+  .profile__statistics .key {
+    font-size: 1.6rem;
+  }
+}
+
+.profile__intro {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.profile__title {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-size: 2.4rem;
+}
+.profile__description {
+  margin-bottom: 1rem;
+  color: var(--text-color-secondary);
+  /* font-size: 2rem; */
+}
+.profile__link {
+  color: var(--color-primary);
+  word-break: break-all;
+}
+.profile__footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile__btn {
+  margin: 5px;
+  flex-grow: 1;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+@media (min-width: 28em) {
+  .profile__btn {
+    font-size: 2rem;
+  }
+}
+.profile__btn--sm {
+  width: 4rem;
+  min-height: 4rem;
+  flex-grow: 0;
+  position: relative;
+}
+.profile__btn svg {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
