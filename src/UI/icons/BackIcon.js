@@ -1,0 +1,16 @@
+const bakIconPath = React.createElement('path', {
+  strokeLinecap: 'round',
+  strokeLinejoin: 'round',
+  strokeWidth: '2',
+  d: 'M15 19l-7-7 7-7',
+});
+function BackIcon() {
+  return React.createElement('svg', {
+    xmlns: 'http://www.w3.org/2000/svg',
+    className: 'w-full h-full',
+    fill: 'none',
+    viewBox: '0 0 24 24',
+    stroke: 'currentColor',
+    children: bakIconPath,
+  });
+}

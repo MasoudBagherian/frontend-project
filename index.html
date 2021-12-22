@@ -7,157 +7,33 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <title>instagram clone</title>
   </head>
-  <body class="font-primary">
-    <div class="header">
-      <div class="logo logo--sm">
-        <h1 class="logo__body">instagram</h1>
-        <div class="logo__badge">
-          <svg
-            class="verify-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 48 48"
-            width="48px"
-            height="48px"
-          >
-            <polygon
-              fill="#42a5f5"
-              points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884"
-            />
-            <polygon
-              fill="#fff"
-              points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926"
-            />
-          </svg>
-        </div>
-        <!-- end .logo__badge -->
-      </div>
-      <!-- end .logo -->
-      <div class="header__controls">
-        <button class="header__btn" id="back-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-full h-full"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-        <div class="logo logo--md">
-          <h1 class="logo__body">instagram</h1>
-          <div class="logo__badge">
-            <svg
-              class="verify-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 48 48"
-              width="48px"
-              height="48px"
-            >
-              <polygon
-                fill="#42a5f5"
-                points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884"
-              />
-              <polygon
-                fill="#fff"
-                points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926"
-              />
-            </svg>
-          </div>
-        </div>
-        <!-- end .logo -->
-        <button class="header__btn" id="menu-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-full h-full"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
-            />
-          </svg>
-        </button>
-        <!-- end .controls__menu -->
-      </div>
-      <!-- end .controls -->
-    </div>
-    <!-- end .profile__header -->
-    <div class="profile">
-      <div class="profile__summary">
-        <div class="profile__avatar">
-          <img alt="" src="assets/image/instagram-avatar.svg" class="default" />
-        </div>
-        <!-- end .profile__avatar -->
-        <div class="profile__info">
-          <div class="profile__statistics font-secondary">
-            <h3 class="heading">6368</h3>
-            <p class="key">posts</p>
-          </div>
-          <div class="profile__statistics font-secondary">
-            <h3 class="heading">350 m</h3>
-            <p class="key">followers</p>
-          </div>
-          <div class="profile__statistics font-secondary">
-            <h3 class="heading">101</h3>
-            <p class="key">following</p>
-          </div>
-        </div>
-        <!-- end .profile__info -->
-      </div>
-      <!-- end .profile__summary -->
-      <div class="profile__intro">
-        <h2 class="profile__title">instagram</h2>
-        <p class="profile__description">
-          Bringing you closer to the people and things you love.
-        </p>
-        <a href="#" class="profile__link"> www.facebook.com/covidsupport </a>
-      </div>
-      <!-- end .profile__intro -->
-      <div class="profile__footer">
-        <button
-          class="profile__btn btn btn-primary font-secondary"
-          id="follow-btn"
-        >
-          follow
-        </button>
-        <button
-          id="message-btn"
-          class="profile__btn btn btn-secondary font-secondary"
-        >
-          message
-        </button>
-        <button
-          id="options-btn"
-          class="profile__btn profile__btn--sm btn btn-secondary"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-      </div>
-      <!-- end .profile__body -->
-    </div>
-    <!-- end .profile -->
-    <script src="assets/js/main.js"></script>
+  <body>
+    <div id="root"></div>
+    <!-- modules -->
+    <script src="modules/react.js"></script>
+    <script src="modules/react-dom.js"></script>
+    <!-- icons -->
+    <script src="src/UI/icons/BackIcon.js"></script>
+    <script src="src/UI/icons/LogoIcon.js"></script>
+    <script src="src/UI/icons/MenuIcon.js"></script>
+    <script src="src/UI/icons/OptionsIcon.js"></script>
+    <!-- button -->
+    <script src="src/UI/Button/Button.js"></script>
+    <!-- logo -->
+    <script src="src/componensts/Logo/LogoBadge/LogoBadge.js"></script>
+    <script src="src/componensts/Logo/Logo.js"></script>
+    <!-- header -->
+    <script src="src/componensts/Header/HeaderControls/HeaderControls.js"></script>
+    <script src="src/componensts/Header/Header.js"></script>
+    <!-- profile -->
+    <script src="src/componensts/Profile/ProfileStatistics/ProfileStatistics.js"></script>
+    <script src="src/componensts/Profile/ProfileInfo/ProfileInfo.js"></script>
+    <script src="src/componensts/Profile/ProfileAvatar/ProfileAvatar.js"></script>
+    <script src="src/componensts/Profile/ProfileSummary/ProfileSummary.js"></script>
+    <script src="src/componensts/Profile/ProfileIntro/ProfileIntro.js"></script>
+    <script src="src/componensts/Profile/ProfileFooter/ProfileFooter.js"></script>
+    <script src="src/componensts/Profile/Profile.js"></script>
+    <script src="src/App.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
