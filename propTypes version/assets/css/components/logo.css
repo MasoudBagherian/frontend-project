@@ -1,0 +1,43 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo--md {
+  display: none;
+}
+@media (min-width: 28em) {
+  .logo--sm {
+    display: none;
+  }
+  .logo--md {
+    display: flex;
+  }
+}
+.logo__body {
+  font-size: 2rem;
+}
+@media (min-width: 28em) {
+  .logo__body {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 56em) {
+  .logo__body {
+    font-size: 2.8rem;
+  }
+}
+.logo__badge {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 8px;
+}
+@media (min-width: 28em) {
+  .logo__badge {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.logo .verify-icon {
+  width: 100%;
+  height: 100%;
+}
