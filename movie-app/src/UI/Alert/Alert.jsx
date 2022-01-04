@@ -3,7 +3,7 @@ function configAlert(type) {
     return {
       color: '#f02020',
       icon: <ErrorIcon />,
-      title: 'eroro',
+      title: 'error',
     };
   }
   if (type === 'warning') {
