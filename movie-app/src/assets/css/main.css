@@ -1,0 +1,13 @@
+/* vendor */
+@import './vendor/fonts.css';
+/* base */
+@import './base/reset.css';
+@import './base/grid.css';
+@import './base/animations.css';
+/* components */
+@import '../../components/Header/header.css';
+@import '../../components/Logo/logo.css';
+@import '../../components/SearchBox/searchbox.css';
+@import '../../components/MovieList/Movie/movie.css';
+@import '../../UI/Loader/loader.css';
+@import '../../UI/Alert/alert.css';
