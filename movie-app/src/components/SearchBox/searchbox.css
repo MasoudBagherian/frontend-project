@@ -6,6 +6,7 @@
 .search__input {
   width: 100%;
   font-size: inherit;
+  font-family: inherit;
   color: #fff;
   background-color: var(--color-secondary);
   border: 2px solid var(--color-primary);
