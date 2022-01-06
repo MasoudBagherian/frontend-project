@@ -9,5 +9,7 @@
 @import '../../components/Logo/logo.css';
 @import '../../components/SearchBox/searchbox.css';
 @import '../../components/MovieList/Movie/movie.css';
+@import '../../components/Trailer/trailer.css';
 @import '../../UI/Loader/loader.css';
 @import '../../UI/Alert/alert.css';
+@import '../../UI/Backdrop/backdrop.css';

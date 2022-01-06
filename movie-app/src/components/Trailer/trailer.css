@@ -1,0 +1,23 @@
+.trailer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 80%;
+  max-height: 80%;
+  border-radius: 5px;
+  overflow: hidden;
+  border: none;
+  z-index: 2;
+}
+@media (min-width: 32em) {
+  .trailer {
+    width: 60%;
+  }
+}
+
+@media (min-width: 50em) {
+  .trailer {
+    width: 50%;
+  }
+}

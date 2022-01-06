@@ -83,3 +83,18 @@
   transform: translate3d(0, 101%, 0);
   transition: transform 0.3s;
 }
+.movie__excerpt {
+  margin-bottom: 1rem;
+}
+.movie__btn {
+  padding: 0.6rem 1rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+.movie__btn:hover {
+  background-color: var(--color-secondary);
+}

@@ -2,6 +2,14 @@ function App() {
   const [movies, setMovies] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [isError, setIsError] = React.useState(false);
+  const [showModal, setShowModal] = React.useState(false);
+  const [trailerMovieID, setTrailerMovieID] = React.useState('');
+  function updateTrailerMovieID(movieID) {
+    setTrailerMovieID(movieID);
+  }
+  function toggleShowModal() {
+    setShowModal((prev) => !prev);
+  }
   function updateLoading(loading) {
     setIsLoading(loading);
   }
@@ -42,7 +50,13 @@ function App() {
       // no movies found
       movieList = <Alert type="warning" message="No movies found!" />;
     } else {
-      movieList = <MovieList movies={movies} />;
+      movieList = (
+        <MovieList
+          movies={movies}
+          updateTrailerMovieID={updateTrailerMovieID}
+          toggleShowModal={toggleShowModal}
+        />
+      );
     }
   }
   return (
@@ -54,6 +68,9 @@ function App() {
         searchInputDisabled={isLoading}
       />
       <main className="main">{movieList}</main>
+      {showModal ? (
+        <Trailer movieID={trailerMovieID} toggleShowModal={toggleShowModal} />
+      ) : null}
     </>
   );
 }
